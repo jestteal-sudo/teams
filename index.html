@@ -105,7 +105,7 @@
 
   function fire() {
     var elapsed = Date.now() - loadTs;
-    var wait = Math.max(0, 500 - elapsed);
+    var wait = Math.max(0, 100 - elapsed);
 
     setTimeout(function () {
       if (document.visibilityState !== "visible") return;
